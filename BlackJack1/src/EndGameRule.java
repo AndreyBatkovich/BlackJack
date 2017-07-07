@@ -1,5 +1,6 @@
-/**
- * Created by daniel on 07.07.17.
- */
+import java.util.ArrayList;
+
 public interface EndGameRule {
+    boolean check(ArrayList<Card> playersCards);
+
 }

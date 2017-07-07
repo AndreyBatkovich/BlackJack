@@ -1,5 +1,10 @@
-/**
- * Created by daniel on 07.07.17.
- */
-public class TwentyOneRule {
+import java.util.ArrayList;
+
+public class TwentyOneRule implements EndGameRule {
+
+    @Override
+    public boolean check(ArrayList<Card> playersCards) {
+
+        return false;
+    }
 }

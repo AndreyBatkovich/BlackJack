@@ -15,9 +15,6 @@ public class Card {
         this.cardSuite = cardSuite;
     }
 
-    public Card(int i) {
-    }
-
     public String getCardSuite() {
         return cardSuite;
     }
@@ -32,4 +29,23 @@ public class Card {
    public  String toString(){
    return "CARD NAME  " + cardName + "   " + cardSuite;
    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Card card = (Card) o;
+
+        if (!cardName.equals(card.cardName)) return false;
+        return cardSuite.equals(card.cardSuite);
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = cardName.hashCode();
+        result = 31 * result + cardSuite.hashCode();
+        return result;
+    }
 }

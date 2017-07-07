@@ -1,5 +1,8 @@
-/**
- * Created by daniel on 07.07.17.
- */
-public class UkraineRule {
+import java.util.ArrayList;
+
+public class UkraineRule implements EndGameRule {
+    @Override
+    public boolean check(ArrayList<Card> playersCards) {
+        return false;
+    }
 }
