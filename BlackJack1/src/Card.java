@@ -14,18 +14,15 @@ public class Card {
         this.cardValue = cardValue;
         this.cardSuite = cardSuite;
     }
-
     public String getCardSuite() {
         return cardSuite;
     }
-
     public String getCardName() {
         return cardName;
     }
     public int getCardValue() {
         return cardValue;
     }
-
    public  String toString(){
    return "CARD NAME  " + cardName + "   " + cardSuite;
    }
