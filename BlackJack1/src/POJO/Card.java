@@ -1,3 +1,4 @@
+package POJO;
 
 /**
  * Created by Нонна on 29.06.17.
